@@ -10,16 +10,21 @@ The following value types are supported for writing: strings, integers and boole
 
 ### Usage Instructions
 
+Install through composer:
+```php
+composer require "infinety-es/config"
+```
+
 Add this to ```app/config/app.php``` under the 'providers' key:
 
 ```php
-'October\Rain\Config\ConfigServiceProvider',
+'Infinety\Config\ConfigServiceProvider',
 ```
 
 You can now write to config files:
 
 ```
-Config::write('app.url', 'http://octobercms.com');
+Config::write('app.url', 'http://infinety.es');
 ```
 
 ### Usage outside Laravel
@@ -27,7 +32,7 @@ Config::write('app.url', 'http://octobercms.com');
 The `Rewrite` class can be used anywhere.
 
 ```php
-$writeConfig = new October\Rain\Config\Rewrite;
+$writeConfig = new Infinety\Config\Rewrite;
 $writeConfig->toFile('path/to/config.php', [
     'item' => 'new value',
     'nested.config.item' => 'value'
