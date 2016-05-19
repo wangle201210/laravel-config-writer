@@ -1,6 +1,6 @@
 <?php
 
-use October\Rain\Config\Rewrite;
+use Infinety\Config\Rewrite;
 
 class RewriteTest extends TestCase
 {

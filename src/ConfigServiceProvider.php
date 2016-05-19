@@ -1,6 +1,6 @@
 <?php
 
-namespace October\Rain\Config;
+namespace Infinety\Config;
 
 use Illuminate\Support\ServiceProvider;
 
